@@ -1,0 +1,11 @@
+ID,Food Item Name,Fat (g),Salt (g),Sodium (mg),Carbs (g),Protein (g),Calories (kcal)
+1,Apple,0.2,0.01,2,15,0.3,60
+2,Chicken Breast,3.1,0.1,420,0,23,165
+3,Brown Rice,2,0.01,1,78,7,350
+4,Salmon,13,0.1,420,0,22,205
+5,Broccoli,0.3,0.01,20,7,3,34
+6,Eggs,10.6,0.1,420,0.7,12.6,157
+7,Whole Milk,3.3,0.1,43,4.8,3.2,61
+8,Oatmeal,6.9,0.1,420,66.3,13.3,389
+9,Almonds,54.3,0.1,420,22,21,623
+10,Avocado,15,0.01,7,6,2,160

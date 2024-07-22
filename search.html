@@ -1,0 +1,298 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>جستجو</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href=" logo/favicon.png"/>
+       
+	<!--font-awesome.min.css-->
+
+        <link rel="stylesheet" href=" css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href=" css/linearicons.css">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href=" css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href=" css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href=" css/owl.carousel.min.css">
+		<link rel="stylesheet" href=" css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href=" css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href=" css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href=" css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href=" css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+</div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class=" scroll active"><a href="#home"><strong>خانه</strong></a></li>
+				                    <li class="scroll"><a href="#service"><strong>سوالات متداول</strong></a></li>
+				                    <li class="scroll"><a href="#featured-cars"><strong>جستجو</strong></a></li>
+				                    <li class="scroll"><a href="#new-cars"><strong>ویتامین ها</strong></a></li>
+				                    <li class="scroll"><a href="#brand"><strong>نکات</strong></a></li>
+				                    <li class="scroll"><a href="#contact"><strong>پشتیبانی</strong></a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>جستجوی حقایق تغذیه ای</h2>
+					<p>&nbsp;
+				     </p>
+</div>
+			</div>
+		<form method="post" name="search_form" action="process_data.php">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="model-search-content">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2><strong>کالری</strong>&nbsp;</h2>
+										<div class="model-select-icon">
+											<select class="form-control" name="calorie_dropdown">
+
+											  	<option value="default">کالری</option><!-- /.option-->
+
+											  	<option value="0 AND 200">0-200</option><!-- /.option-->
+
+											  	<option value="200 AND 500">200-500</option><!-- /.option-->
+											  	<option value="500 AND 99999">بیشتر از500</option><!-- /.option-->
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+									<div class="single-model-search">
+										<h2><strong>چربی</strong></h2>
+										<div class="model-select-icon">
+											<select class="form-control" name="fat_dropdown">
+
+											  	<option value="default">چربی</option><!-- /.option-->
+
+											  	<option value="0 AND 20">0g-20g</option><!-- /.option-->
+
+											  	<option value="20 AND 50">20g-50g</option><!-- /.option-->
+											  	<option value="50 AND 99999">بیشتر از 50</option><!-- /.option-->
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2><strong>پروتئین&nbsp;</strong></h2>
+										<div class="model-select-icon">
+											<select class="form-control" name="protein_dropdown">
+
+											  	<option value="default">پروتئین</option><!-- /.option-->
+
+											  	<option value="0 AND 10">0-10g</option><!-- /.option-->
+
+											  	<option value="10 AND 30">10g-30g</option><!-- /.option-->
+											  	<option value="30 AND 99999">بیشتر از 30</option><!-- /.option-->
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+									<div class="single-model-search">
+										<h2><strong>کربوهیدرات</strong></h2>
+										<div class="model-select-icon">
+											<select class="form-control" name="carbs_dropdown">
+
+											  	<option value="default">کربوهیدرات</option><!-- /.option-->
+
+											  	<option value="0 AND 30">0g-30g</option><!-- /.option-->
+
+											  	<option value="30 AND 60">30g-60g</option><!-- /.option-->
+											  	<option value="60 AND 99999">بیشتر از 60</option><!-- /.option-->
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2><strong>نمک</strong></h2>
+										<div class="model-select-icon">
+											<select class="form-control" name="salt_dropdown">
+
+											  	<option value="default">نمک</option><!-- /.option-->
+
+											  	<option value="0 AND 2">0g-2g</option><!-- /.option-->
+
+											  	<option value="2 AND 4">2g-4g</option><!-- /.option-->
+											  	<option value="4 AND 99999">بیشتر از 4</option><!-- /.option-->
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+									<div class="single-model-search">
+										<h2><strong>سدیم</strong></h2>
+										<div class="model-select-icon">
+											<select class="form-control" name="sodium_dropdown">
+
+											  	<option value="default">سدیم</option><!-- /.option-->
+
+											  	<option value="0 AND 200">0mg-200mg</option><!-- /.option-->
+
+											  	<option value="200 AND 400">200mg-400mg</option><!-- /.option-->
+											  	<option value="400 AND 99999">بیشتر از 400</option><!-- /.option-->
+
+											</select><!-- /.select-->
+										</div><!-- /.model-select-icon -->
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-12">
+									<div class="single-model-search text-center">
+										<button class="welcome-btn model-search-btn" type="submit">
+								       <strong>جستجو</strong>&nbsp; </button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</form>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--service start -->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content"> </div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars"> <!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+		<!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!-- clients-say strat -->
+	<!--/.clients-say-->	
+		<!-- clients-say end -->
+
+		<!--brand strat -->		<!--/brand-->	
+		<!--brand end -->
+
+		<!--blog start -->
+	<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact"> <!--/.container-->
+
+			<div id="scroll-Top2">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src=" js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src=" js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src=" js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src=" js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src=" js/custom.js"></script>
+        
+    </body>
+	
+</html>
