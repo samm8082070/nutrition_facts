@@ -47,8 +47,11 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href=" css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+		<link rel="stylesheet" href="css/search-bar.css">
+
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		
         <!--[if lt IE 9]>
@@ -109,7 +112,7 @@
 				     </p>
 </div>
 			</div>
-		<form method="post" name="search_form" action="process_data.php">
+		<form method="post" name="search_form" action="process_data_v2.php">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -227,31 +230,24 @@
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
 
-		<!--service start -->
-		<section id="service" class="service">
-			<div class="container">
-				<div class="service-content"> </div>
-			</div><!--/.container-->
 
-		</section><!--/.service-->
-		<!--service end-->
+		<!--search start -->
+		<section id="new-cars" class="new-cars">
+			<form method="post" name="search_form" action="process_data_name.php">
 
-		<!--new-cars start -->
-		<section id="new-cars" class="new-cars"> <!--/.container-->
+				<div class="banner_section layout_padding">
+					<div class="container">
+						<h1 class="best_taital">جستجو</h1>
+						<div class="box_main">
+							<input type="text" class="email_bt" placeholder="نام را وارد کنید" name ="name">
+							<button type="submit" class="subscribe_bt">جستجو</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
 
-		</section><!--/.new-cars-->
-		<!--new-cars end -->
 
-		<!--featured-cars start -->
-		<!--/.featured-cars-->
-		<!--featured-cars end -->
-
-		<!-- clients-say strat -->
-	<!--/.clients-say-->	
-		<!-- clients-say end -->
-
-		<!--brand strat -->		<!--/brand-->	
-		<!--brand end -->
 
 		<!--blog start -->
 	<section id="blog" class="blog"></section><!--/.blog-->

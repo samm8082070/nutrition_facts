@@ -25,7 +25,10 @@ $selected_sodium = $_POST['sodium_dropdown'];
 // Construct SQL query based on user selections (adjust logic as needed)
 $conditions = "";
 
-$sql = "SELECT * FROM `nutrituion_facts` WHERE ";
+$sql = "SELECT f.Food_Item_ID,f.Food_Item_Name, n.Fat_g, n.Salt_g, n.Sodium_mg, n.Carbs_g, n.Protein_g, n.Calories_kcal
+FROM Food_Item_table f
+         INNER JOIN Nutrition_Fact_table n ON f.Food_Item_ID = n.Food_Item_ID
+WHERE ";
 
 
 if ($selected_calorie != "default") {
@@ -90,12 +93,12 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     echo "<table>";
     echo "<thead><tr>";
-    echo "<th>ID</th><th>Food Item</th><th>Fat (g)</th><th>Salt (g)</th><th>Sodium (mg)</th><th>Carbs (g)</th><th>Protein (g)</th><th>Calories (kcal)</th>";
+    echo "<th>Food_Item_ID</th><th>Food Item</th><th>Fat (g)</th><th>Salt (g)</th><th>Sodium (mg)</th><th>Carbs (g)</th><th>Protein (g)</th><th>Calories (kcal)</th>";
     echo "</tr></thead>";
     echo "<tbody>";
     while($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>" . $row["ID"] . "</td>";
+        echo "<td><a href='details.php?id=" . $row["Food_Item_ID"] . "'>" . $row["Food_Item_ID"] . "</a></td>";
         echo "<td>" . $row["Food_Item_Name"] . "</td>";
         echo "<td>" . $row["Fat_g"] . "</td>";
         echo "<td>" . $row["Salt_g"] . "</td>";

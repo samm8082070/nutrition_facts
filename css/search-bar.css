@@ -1,0 +1,99 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 2px;
+    padding: 6px 8px;
+    width: 100%;
+}
+.box_main {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px !important;
+    display: flex;
+}
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #5f6368;
+    margin-left: 8px;
+}
+.search_textbox {
+    width: 70%;
+    float: left;
+    font-size: 16px;
+    color: #c3c2c2;
+    background-color: #ffffff;
+    text-align: left;
+    padding-left: 15px;
+    height: 50px;
+    border: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.search_textbox_button {
+    width: 30%;
+    background-color: #313233;
+    float: right;
+    padding: 9px 14px;
+    color: #fff;
+    height: 50px;
+    font-size: 16px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 0px;
+}
+.banner_section {
+    width: 100%;
+    float: left;
+    background-image: url(/images/background.png);
+    height: auto;
+    padding-bottom: 90px;
+    background-size: cover;
+}
+.best_taital{
+    width: 100%;
+    float: left;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+.email_bt {
+     width: 70%;
+     float: left;
+     font-size: 16px;
+     color: #c3c2c2;
+     background-color: #ffffff;
+     text-align: left;
+     padding-left: 15px;
+     height: 50px;
+     border: 0px;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
+ }
+.subscribe_bt {
+      width: 30%;
+      background-color: #313233;
+      float: right;
+      padding: 9px 14px;
+      color: #fff;
+      height: 50px;
+      font-size: 16px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
